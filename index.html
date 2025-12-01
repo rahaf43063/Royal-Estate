@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Estate - Your premier destination for luxury properties in Dubai. Find your dream home among our exclusive collection of villas, apartments, and commercial properties.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/Logo-black.png">
+    <title>Royal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="mobile-nav" class="mobile-nav" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/Logo.png" alt="Royal Estate" width="150" height="40" loading="lazy">
+                </a>
+            </div>
+
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="buttons">
+                <a href="#" class="btn-login">Log in</a>
+                <a href="#" class="btn-signup">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <aside id="aside">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">
+                    <img src="assets/images/Logo.png" alt="Royal Estate" width="150" height="40" loading="lazy">
+                </a>
+                <button class="close-menu" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu-content">
+                <form action="#" class="search-form" role="search">
+                    <div class="search-input-wrapper">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Search properties..." aria-label="Search for properties"
+                            aria-required="true">
+                    </div>
+                </form>
+
+                <nav class="mobile-nav-menu">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> Buy</a></li>
+                        <li><a href="#"><i class="fas fa-tag"></i> Sell</a></li>
+                        <li><a href="#"><i class="fas fa-key"></i> Rent</a></li>
+                        <li><a href="#"><i class="fas fa-file-signature"></i> Mortgage</a></li>
+                        <li><a href="#"><i class="fas fa-user-tie"></i> Find an Agent</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Saved Homes</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> News & Insights</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-aside">
+                    <img src="https://static.rdc.moveaws.com/rdc-ui/pictos/picto-app-promotion-bg.svg" alt="">
+                    <span class="Find_Homes">Find Homes on the go!</span><a
+                        aria-label="Download the App from the Google Play store" href=""><img
+                            src="https://static.rdc.moveaws.com/rdc-ui/pictos/picto-android-app-download-badge.svg"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <section id="home">
+        <div class="hero">
+            <div class="overlay"></div>
+            <div class="hero-info">
+                <h1>Luxury Properties in Dubai - Royal Estate</h1>
+                <p class="hero-description">Discover a wide range of luxury properties that suit all tastes and budgets.
+                    We offer multiple options of villas and apartments in the most prestigious neighborhoods.</p>
+                <form action="" class="property-search-form">
+                    <div class="search-area">
+                        <!-- Property Type Selection (Buy/Rent) -->
+                        <div class="search-item property-type-selector">
+                            <label>Transaction Type <i class="fas fa-chevron-down"></i></label>
+                            <div class="select-wrapper">
+                                <select name="type-options" class="custom-select">
+                                    <option value="Sale">For Sale</option>
+                                    <option value="Rent">For Rent</option>
+                                    <option value="Buy">Buy</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Location Field -->
+                        <div class="search-item">
+                            <label>City / Street <i class="fas fa-chevron-down"></i></label>
+                            <input type="text" value="123 Street" placeholder="Enter location">
+                        </div>
+
+                        <!-- Property Type -->
+                        <div class="search-item">
+                            <label>Property Type <i class="fas fa-chevron-down"></i></label>
+                            <div class="select-wrapper">
+                                <select name="type" class="custom-select">
+                                    <option value="villa" selected>Villa</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="office">Office</option>
+                                    <option value="land">Land</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Price Field -->
+                        <div class="search-item">
+                            <label>Price <i class="fas fa-chevron-down"></i></label>
+                            <input type="text" value="$950,000" placeholder="Maximum Price">
+                        </div>
+
+                        <!-- Search Button -->
+                        <div class="search-btn">
+                            <button type="submit">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="inner-about">
+                <div class="about-content">
+
+                    <div class="right-section">
+                        <span class="section-subtitle">Who We Are?</span>
+                        <h2 class="section-title">About Royal Estate - Your Trusted Real Estate Partner</h2>
+                        <h2 class="section-title">Experts in the Real Estate Market for Over a Decade.</h2>
+                        <p class="about-description">We are a leading company providing comprehensive real estate
+                            solutions, committed to helping our clients find the best properties, whether it's a luxury
+                            villa or a modern apartment. Our extensive experience in the local market guarantees you a
+                            reliable and profitable service.</p>
+
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <!-- <i class="fas fa-check-circle"></i> -->
+                                <span>More than 500 successful sales transactions</span>
+                            </li>
+                            <li class="feature-item">
+                                <!-- <i class="fas fa-check-circle"></i> -->
+                                <span>Team of certified real estate professionals</span>
+                            </li>
+                            <li class="feature-item">
+                                <!-- <i class="fas fa-check-circle"></i> -->
+                                <span>Excellent customer service and continuous support</span>
+                            </li>
+                            <li class="feature-item">
+                                <!-- <i class="fas fa-check-circle"></i> -->
+                                <span>Free and accurate property valuations</span>
+                            </li>
+                        </ul>
+
+                        <a href="#contact" class="btn btn-primary">Connect with Our Experts</a>
+                    </div>
+
+                    <div class="left-section">
+                        <div class="about-image">
+                            <img src="assets/images/Royal.svg" alt="Image of our team or office" class="main-image">
+                            <div class="experience-badge">
+                                <span class="years">10+</span>
+                                <span class="text">Years of Real Estate Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="real-estate">
+        <div class="container">
+            <h2 class="section-title">Featured Properties in Dubai</h2>
+            <p class="section-description">We offer a curated selection of the best available villas and apartments for
+                sale or rent in strategic locations.</p>
+
+            <div class="all-real-estate">
+
+                <div class="aqar">
+                    <div class="image">
+                        <span class="ribbon new-ribbon">New</span>
+                        <img src="assets/images/Main-Villa.png" alt="Image of a modern villa" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="aqar-info">
+                        <span class="category">For Sale</span>
+                        <h3>Luxury Villa with Private Pool</h3>
+                        <span class="price">$1,250,000</span>
+                        <hr>
+                        <div class="props">
+                            <ul>
+                                <li>
+                                    <span>3 Bedrooms</span>
+                                    <span><i class="fas fa-bed"></i></span>
+                                </li>
+                                <li>
+                                    <span>2 Bathrooms</span>
+                                    <span><i class="fas fa-bath"></i></span>
+                                </li>
+                                <li>
+                                    <span>250 m²</span>
+                                    <span><i class="fas fa-ruler-combined"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="single-aqar.html" class="btn btn-details">View Details</a>
+                </div>
+
+                <div class="aqar">
+                    <div class="image">
+                        <img src="assets/images/Apartment.webp" alt="Image of a modern apartment" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="aqar-info">
+                        <span class="category rent">For Rent</span>
+                        <h3>Modern Apartment with Sea View</h3>
+                        <span class="price">$3,000 / month</span>
+                        <hr>
+                        <div class="props">
+                            <ul>
+                                <li>
+                                    <span>2 Bedrooms</span>
+                                    <span><i class="fas fa-bed"></i></span>
+                                </li>
+                                <li>
+                                    <span>1 Bathroom</span>
+                                    <span><i class="fas fa-bath"></i></span>
+                                </li>
+                                <li>
+                                    <span>120 m²</span>
+                                    <span><i class="fas fa-ruler-combined"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="single-aqar.html" class="btn btn-details">View Details</a>
+                </div>
+
+                <div class="aqar">
+                    <div class="image"><span class="ribbon featured-ribbon">Special Offer</span>
+                        <img src="assets/images/Office.webp" alt="Image of a commercial office space" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="aqar-info">
+                        <span class="category">For Sale</span>
+                        <h3>Commercial Office in Business District</h3>
+                        <span class="price">$650,000</span>
+                        <hr>
+                        <div class="props">
+                            <ul>
+                                <li>
+                                    <span>3 Offices</span>
+                                    <span><i class="fas fa-briefcase"></i></span>
+                                </li>
+                                <li>
+                                    <span>1 Bathroom</span>
+                                    <span><i class="fas fa-bath"></i></span>
+                                </li>
+                                <li>
+                                    <span>80 m²</span>
+                                    <span><i class="fas fa-ruler-combined"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="single-aqar.html" class="btn btn-details">View Details</a>
+                </div>
+
+                <div class="aqar">
+                    <div class="image">
+                        <img src="assets/images/Land.webp" alt="Image of a residential land plot" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="aqar-info">
+                        <span class="category">For Sale</span>
+                        <h3>Residential Land Ready for Construction</h3>
+                        <span class="price">$420,000</span>
+                        <hr>
+                        <div class="props">
+                            <ul>
+                                <li>
+                                    <span>Quiet Area</span>
+                                    <span><i class="fas fa-map-marked-alt"></i></span>
+                                </li>
+                                <li>
+                                    <span>Ready Blueprints</span>
+                                    <span><i class="fas fa-file-alt"></i></span>
+                                </li>
+                                <li>
+                                    <span>600 m²</span>
+                                    <span><i class="fas fa-ruler-combined"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="single-aqar.html" class="btn btn-details">View Details</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">Client Testimonials - Why Choose Royal Estate</h2>
+
+        <div class="container all-testimonials slider" style="--width: 300px; --height: 350px; --quantity: 8;">
+
+            <div class="list">
+
+                <div class="card item" style="--position: 1;">
+                    <div class="image">
+                        <img src="assets/images/client-1.webp" alt="Client Photo: Ahmed Al-Fahad">
+                    </div>
+                    <h3>Ahmed Al-Fahad</h3>
+                    <span class="job-title">General Manager, Ruya Development</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>“Exceptional service! They helped us find the perfect commercial property quickly and
+                        efficiently. Highly recommended.”</p>
+                </div>
+
+                <div class="card item" style="--position: 2;">
+                    <div class="image">
+                        <img src="assets/images/client-2.webp" alt="Client Photo: Khalid Al-Saad">
+                    </div>
+                    <h3>Khalid Al-Saad</h3>
+                    <span class="job-title">Private Real Estate Investor</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>“A professional team with deep market knowledge. The purchasing process was very smooth and
+                        completed in record time.”</p>
+                </div>
+
+                <div class="card item" style="--position: 3;">
+                    <div class="image">
+                        <img src="assets/images/client-3.webp" alt="Client Photo: Noura Al-Otaibi" loading="lazy" width="80" height="80" class="client-photo">
+                    </div>
+                    <h3>Noura Al-Otaibi</h3>
+                    <span class="job-title">Restaurant & Café Owner</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p>“The best property search experience for rent ever! The options were diverse and the post-rental
+                        service is excellent.”</p>
+                </div>
+
+                <div class="card item" style="--position: 4;">
+                    <div class="image">
+                        <img src="assets/images/client-4.webp" alt="Client Photo: Fahad Al-Qahtani">
+                    </div>
+                    <h3>Fahad Al-Qahtani</h3>
+                    <span class="job-title">Head of Financial Planning</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>“I invested in a residential plot with their help and achieved an excellent return within one
+                        year. Thank you for your expertise.”</p>
+                </div>
+
+                <div class="card item" style="--position: 5;">
+                    <div class="image">
+                        <img src="assets/images/client-5.webp" alt="Client Photo: Layla Mohammed" loading="lazy" width="80" height="80" class="client-photo">
+                    </div>
+                    <h3>Layla Mohammed</h3>
+                    <span class="job-title">Architect</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>“My old villa was sold at the highest price in the area. The advertising and marketing were of a
+                        very high level of professionalism.”</p>
+                </div>
+
+                <div class="card item" style="--position: 6;">
+                    <div class="image">
+                        <img src="assets/images/client-6.webp" alt="Client Photo: Yousef Al-Mutairi" loading="lazy" width="80" height="80" class="client-photo">
+                    </div>
+                    <h3>Yousef Al-Mutairi</h3>
+                    <span class="job-title">Retired and Small Investor</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>“I thank them for their patience and guidance. They helped me find a small, comfortable apartment
+                        that suited my retirement and financial expectations.”</p>
+                </div>
+
+                <div class="card item" style="--position: 7;">
+                    <div class="image">
+                        <img src="assets/images/client-7.webp" alt="Client Photo: Sara Abdullah" loading="lazy" width="80" height="80" class="client-photo">
+                    </div>
+                    <h3>Sara Abdullah</h3>
+                    <span class="job-title">Doctor, Private Hospital</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>“Organized and flexible to deal with. I loved that everything was done via phone and internet
+                        without the need for multiple visits.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallary">
+        <h2 class="section-title">Property Gallery - Explore Our Portfolio</h2>
+        <p class="section-description">Explore high-resolution images of our finest apartments and villas in Dubai.</p>
+
+        <div class="container all-images">
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-1.png">
+                    <img src="assets/images/gallery-1.png" alt="Apartment View 1">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+
+            <div class="gallery-item large">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-2.webp">
+                    <img src="assets/images/gallery-2.webp" alt="Apartment View 2">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-3.webp">
+                    <img src="assets/images/gallery-3.webp" alt="Apartment View 3">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-4.png">
+                    <img src="assets/images/gallery-4.png" alt="Apartment View 4">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-5.webp">
+                    <img src="assets/images/gallery-5.webp" alt="Apartment View 5">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-6.png">
+                    <img src="assets/images/gallery-6.png" alt="Apartment View 6">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fancybox="property-gallery" href="assets/images/gallery-7.webp">
+                    <img src="assets/images/gallery-7.webp" alt="Apartment View 7">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2 class="section-title">Exclusive Partners</h2>
+        <p class="section-description">We collaborate with the world's finest brands to deliver unparalleled quality and
+            service.</p>
+        <div class="container logos">
+
+            <div class="image">
+                <img src="assets/images/Roberto_Cavalli.webp" alt="Roberto Cavalli Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/MANDARIN.webp" alt="The Residences Mandarin Oriental Maldives Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Logo_Versace.webp" alt="Versace Home Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/De_Grisogono.webp" alt="De Grisogono Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Chelsea_FC.webp" alt="Chelsea Football Club Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Logo_Paramount.webp" alt="Paramount Hotels & Resorts Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Logo_Trump.webp" alt="The Trump Organization Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Logo_Radisson.webp" alt="Radisson Logo">
+            </div>
+
+            <div class="image">
+                <img src="assets/images/Logo_Rotana.webp" alt="Rotana Logo">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2 class="section-title">Real Estate Insights & Market Updates</h2>
+        <!-- <p class="section-description">Dive into our recent insights and analysis.</p> -->
+
+        <div class="container blogs">
+
+            <div class="blog card book">
+                <div class="image cover">
+                    <img src="assets/images/blog-1.png" alt="Blog Post Cover: PropTech Future">
+                    <p class="hover-text">Open Article</p>
+                </div>
+                <div class="info book-content">
+                    <h3>The Future of PropTech: Innovations Shaping 2024</h3>
+                    <p>Explore how Artificial Intelligence, Blockchain, and VR are set to transform the real estate
+                        market, offering new opportunities for investors and buyers...</p>
+                    <hr>
+                    <div class="blog-footer">
+                        <a href="single-blog.html"><button class="read-more-btn">Read More</button></a>
+                        <div class="author">
+                            <span>John Smith</span>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog card book">
+                <div class="image cover">
+                    <img src="assets/images/blog-2.png" alt="Blog Post Cover: Smart Homes">
+                    <p class="hover-text">Open Article</p>
+                </div>
+                <div class="info book-content">
+                    <h3>Smart Homes: Integrating Tech for Modern Living</h3>
+                    <p>Explore how smart home technology is redefining comfort, security, and energy efficiency in
+                        modern properties. A must-read for tech-savvy buyers and developers...</p>
+                    <hr>
+                    <div class="blog-footer">
+                        <a href="single-blog.html"><button class="read-more-btn">Read More</button></a>
+                        <div class="author">
+                            <span>Emily White</span>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog card book">
+                <div class="image cover">
+                    <img src="assets/images/blog-3.png" alt="Blog Post Cover: Green Properties">
+                    <p class="hover-text">Open Article</p>
+                </div>
+                <div class="info book-content">
+                    <h3>Green Properties: Investing in Sustainable Living</h3>
+                    <p>Discover the growing appeal of eco-friendly homes and buildings. Understand the benefits,
+                        technologies, and long-term value of sustainable real estate investments...</p>
+                    <hr>
+                    <div class="blog-footer">
+                        <a href="single-blog.html"><button class="read-more-btn">Read More</button></a>
+                        <div class="author">
+                            <span>David Lee</span>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container contact">
+            <div class="inner-contact">
+                <div>
+                    <h5>Call Sales Hotline</h5>
+                    <a href="tel:+971501234567">+971 50 123 4567</a>
+                </div>
+                <a href="tel:+971501234567"><i class="fa-solid fa-phone-volume"></i></a>
+            </div>
+
+            <div class="inner-contact">
+                <div>
+                    <h5>Email Support</h5>
+                    <a href="mailto:info@amcompany.com">info@royalestate.com</a>
+                </div>
+                <a href="mailto:info@amcompany.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+            </div>
+
+            <div class="inner-contact">
+                <div>
+                    <h5>Visit Our Office</h5>
+                    <a href="https://maps.app.goo.gl/example" target="_blank">Dubai, United Arab Emirates</a>
+                </div>
+                <a href="https://maps.app.goo.gl/example" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>
+
+        <div class="container inner-footer">
+            <div class="footer-box">
+                <img src="assets/images/Logo-black.png" alt="Company Logo">
+                <h3>Royal Estate</h3>
+                <p>We are a leading real estate firm committed to sustainable and innovative property solutions.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="single-blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Stay Connected</h3>
+                <form action="#">
+                    <input type="text" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            &copy; 2025 Royal-Estate. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
